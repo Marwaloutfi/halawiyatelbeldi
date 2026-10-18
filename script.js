@@ -8,11 +8,11 @@ document.addEventListener('DOMContentLoaded', () => {
     updateCartUI();
 });
 
-// Style de catégories type Shein / Temu (Cartes glissantes élégantes)
+// Slider horizontal des catégories (Style Shein / Temu)
 function renderCategoryTabs() {
     const tabsContainer = document.getElementById('categoryTabs');
     tabsContainer.innerHTML = categoriesData.map(cat => `
-        <div class="cat-card-tab ${cat.id === activeCategory ? 'active' : ''}" onclick="switchCategory('${cat.id}')">
+        <div class="cat-slider-card ${cat.id === activeCategory ? 'active' : ''}" onclick="switchCategory('${cat.id}')">
             <span>${cat.name}</span>
         </div>
     `).join('');
@@ -24,9 +24,12 @@ function switchCategory(catId) {
     renderProducts(activeCategory);
 }
 
+// Affichage des types disponibles dans la catégorie choisie
 function renderProducts(catId) {
     const category = categoriesData.find(c => c.id === catId);
     const grid = document.getElementById('productsGrid');
+
+    if(!category) return;
 
     grid.innerHTML = category.items.map(product => `
         <div class="product-card ${!product.inStock ? 'is-sold-out' : ''}">
@@ -183,7 +186,6 @@ function showToast() {
     }, 2000);
 }
 
-// Gestion de la modale d'alerte avant WhatsApp
 function openConfirmModal() {
     if (cart.length === 0) {
         alert('Votre panier est vide.');
@@ -215,7 +217,6 @@ function proceedToWhatsApp() {
     window.open(whatsappUrl, '_blank');
 }
 
-// Scroll Hide Header
 let lastScrollTop = 0;
 const header = document.getElementById('mainHeader');
 
