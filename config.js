@@ -1,5 +1,9 @@
+// ==========================================
+// CONFIGURATION DE LA BOUTIQUE - HALAWIYAT EL BELDI
+// ==========================================
+
 const storeData = {
-    whatsappNumber: "212600000000", // Mets le vrai numéro WhatsApp de ton client ici
+    whatsappNumber: "212600000000", // Remplace par le numéro WhatsApp de ton client (avec l'indicatif 212, sans le +)
     
     categories: [
         {
@@ -11,7 +15,7 @@ const storeData = {
                     name: "Sablé Prestige aux Amandes", 
                     desc: "Délicieux sablés fondants au caramel maison et amandes torréfiées.", 
                     basePrice: 60, 
-                    baseUnit: "kg", 
+                    baseUnit: "kg", // Utilise le convertisseur g / kg
                     inStock: true, 
                     img: "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&q=80&w=600" 
                 },
@@ -32,17 +36,17 @@ const storeData = {
             items: [
                 { 
                     id: "p1", 
-                    name: "Plateau Royal Assorti (200 Unités)", 
-                    desc: "Magnifique plateau garni de 200 pièces de nos meilleures spécialités aux amandes et miel.", 
-                    basePrice: 850, 
-                    baseUnit: "plateau", 
+                    name: "Plateau Royal Assorti", 
+                    desc: "Magnifique plateau garni de spécialités aux amandes et au miel pur.", 
+                    basePrice: 250, 
+                    baseUnit: "plateau", // Quantité simple (1, 2, 3...) sans grammes/kilos
                     inStock: true, 
                     img: "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&q=80&w=600" 
                 },
                 { 
                     id: "p2", 
-                    name: "Plateau Prestige Fêtes (100 Unités)", 
-                    desc: "Assortiment raffiné de 100 pièces variées, idéal pour vos réceptions et fêtes.", 
+                    name: "Plateau Prestige Fêtes", 
+                    desc: "Assortiment raffiné de pièces variées, idéal pour vos réceptions.", 
                     basePrice: 450, 
                     baseUnit: "plateau", 
                     inStock: true, 
@@ -56,10 +60,10 @@ const storeData = {
             items: [
                 { 
                     id: "pk1", 
-                    name: "Pack Célébration Impérial", 
-                    desc: "Pack complet incluant coffret de luxe, assortiment de sablés et douceurs royales.", 
+                    name: "Pack Spécial Beldi", 
+                    desc: "5 kgs de sablés + 1kg de Kaab el Ghazal + assortiment royal complet.", 
                     basePrice: 1000, 
-                    baseUnit: "pack", 
+                    baseUnit: "pack", // Quantité simple (1, 2, 3...)
                     inStock: true, 
                     img: "https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&q=80&w=600" 
                 }
@@ -72,7 +76,7 @@ const storeData = {
                 { 
                     id: "c70_1", 
                     name: "Ghoriba Bhissa aux Noix", 
-                    desc: "Biscuits traditionnels aux noix et cannelle.", 
+                    desc: "Biscuits traditionnels craquelés aux noix et cannelle.", 
                     basePrice: 70, 
                     baseUnit: "kg", 
                     inStock: true, 
