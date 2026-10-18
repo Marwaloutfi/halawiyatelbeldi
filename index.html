@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halawiyat El Beldi | Pâtisserie Marocaine de Luxe</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navigation with ID for scroll hide/show -->
+    <header class="header" id="mainHeader">
+        <div class="nav-container">
+            <a href="#" class="logo-area">
+                <img src="logo.jpeg" alt="Halawiyat El Beldi Logo" class="brand-logo-img">
+                <div class="logo-text">
+                    <h1>Halawiyat El Beldi</h1>
+                    <span>سحر الحلويات التقليدية من قلب الترات إلى مائدتكم</span>
+                </div>
+            </a>
+            <nav class="nav-links">
+                <a href="#menu">Collection & Menu</a>
+                <a href="#about">Notre Savoir-Faire</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="cart-trigger" onclick="toggleCartDrawer()">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="cart-badge" id="cartBadge">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="hero-tag">Douceurs ancestrales, émotions intemporelles</span>
+            <h2>روح الماضي..  <span>في لذة الحاضر</span></h2>
+            <p>Dégustez des douceurs d'exception façonnées à la main avec les meilleurs amandes beldi, du miel pur et des ingrédients d'une qualité royale.</p>
+            <div class="hero-btns">
+                <a href="#menu" class="btn-primary">Découvrir le Menu</a>
+                <a href="#about" class="btn-secondary">Notre Histoire</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section" id="menu">
+        <div class="section-header">
+            <span class="subtitle">La Collection</span>
+            <h2>Nos Catégories d'Exception</h2>
+            <p>Choisissez votre catégorie, sélectionnez la quantité de votre choix et calculez votre tarif instantanément.</p>
+        </div>
+
+        <div class="category-tabs" id="categoryTabs"></div>
+        <div class="products-grid" id="productsGrid"></div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <div class="about-img-box">
+                <div class="gold-frame"></div>
+                <div class="about-img-bg">
+                    <i class="fa-solid fa-archway"></i>
+                </div>
+            </div>
+            <div class="about-content">
+                <span class="subtitle">Savoir-Faire Ancestral</span>
+                <h2>Un Héritage de Douceur et d'Élégance</h2>
+                <p>Enracinée dans les traditions marocaines les plus pures, Halawiyat El Beldi sublime chaque célébration. Tous nos gâteaux  traditionnels sont préparées chaque jour par des maîtres artisans passionnés.</p>
+                <p>Que ce soit pour un mariage, l'Aïd, un événement professionnel ou une réception intime, offrez à vos invités une expérience gustative digne des palais royaux.</p>
+                <div class="features-list">
+                    <div class="feature-item">
+                        <i class="fa-solid fa-check"></i>
+                        <span>100% Amandes Beldi de Premier Choix</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Préparé Frais et sur Commande</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Livraison Soignée Partout au Maroc</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer Section -->
+    <footer class="footer" id="contact">
+        <div class="footer-container">
+            <div class="footer-col">
+                <div class="logo-area" style="margin-bottom: 1rem;">
+                    <div class="logo-text">
+                        <h3 style="color: #f7e7ce; font-family: 'Playfair Display', serif;">Halawiyat El Beldi</h3>
+                        <span style="font-size: 0.7rem; color: #c4b5a5; letter-spacing: 2px;">إرث من الحلاوة والأناقة</span>
+                    </div>
+                </div>
+                <p>L'excellence de la pâtisserie marocaine directement sur votre table. Commandez en un clic, profitez dès l'instant..</p>
+                <div class="social-icons">
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://wa.me/212600000000" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Liens Rapides</h4>
+                <ul>
+                    <li><a href="#menu">Notre Menu</a></li>
+                    <li><a href="#about">Notre Savoir-Faire</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contactez-Nous</h4>
+                <p><i class="fa-solid fa-location-dot"></i> Marrakech, Maroc</p>
+                <p><i class="fa-solid fa-phone"></i> +212 6 00 00 00 00</p>
+                <p><i class="fa-solid fa-envelope"></i> contact@halawiyatelbeldi.ma</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Halawiyat El Beldi. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Floating Cart Drawer -->
+    <div class="cart-drawer-overlay" id="cartOverlay" onclick="toggleCartDrawer()"></div>
+    <div class="cart-drawer" id="cartDrawer">
+        <div class="cart-header">
+            <h3><i class="fa-solid fa-bag-shopping"></i> Votre Commande</h3>
+            <button class="close-cart" onclick="toggleCartDrawer()"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="cart-items" id="cartItemsList"></div>
+        <div class="cart-footer">
+            <div class="cart-total-row">
+                <span>Total Estimé :</span>
+                <span id="cartTotalPrice">0 DH</span>
+            </div>
+            <button class="whatsapp-btn" onclick="checkoutWhatsApp()">
+                <i class="fa-brands fa-whatsapp"></i> Valider votre commande
+            </button>
+        </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div class="toast" id="toastNotification">Produit ajouté au panier avec succès !</div>
+
+    <!-- Link to JS -->
+     <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
