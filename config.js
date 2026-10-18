@@ -3,7 +3,7 @@
 // ==========================================
 
 const storeData = {
-    whatsappNumber: "212600000000", // Remplace par le numéro WhatsApp de ton client (avec l'indicatif 212, sans le +)
+    whatsappNumber: "212721215175", // Remplace par le numéro WhatsApp de ton client (avec l'indicatif 212, sans le +)
     
     categories: [
         {
