@@ -214,7 +214,8 @@ function proceedToWhatsApp() {
     const encodedMessage = encodeURIComponent(message);
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 
-    window.open(whatsappUrl, '_blank');
+    // Force la redirection directe vers WhatsApp sur mobile et desktop
+    window.location.href = whatsappUrl;
 }
 
 let lastScrollTop = 0;
