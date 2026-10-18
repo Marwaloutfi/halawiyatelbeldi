@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     updateCartUI();
 });
 
-// Slider horizontal des catégories (Style Shein / Temu)
+// Slider horizontal des catégories
 function renderCategoryTabs() {
     const tabsContainer = document.getElementById('categoryTabs');
     tabsContainer.innerHTML = categoriesData.map(cat => `
@@ -24,7 +24,7 @@ function switchCategory(catId) {
     renderProducts(activeCategory);
 }
 
-// Affichage des types disponibles dans la catégorie choisie
+// Slider horizontal des produits de la catégorie active
 function renderProducts(catId) {
     const category = categoriesData.find(c => c.id === catId);
     const grid = document.getElementById('productsGrid');
