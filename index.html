@@ -40,22 +40,24 @@
         </div>
     </section>
 
-    <!-- Menu Section -->
+    <!-- Menu Section (Style Slider Shein / Temu) -->
     <section class="menu-section" id="menu">
         <div class="section-header">
             <span class="subtitle">La Collection</span>
             <h2>Nos Catégories d'Exception</h2>
-            <p>Sélectionnez une catégorie de douceurs pour explorer nos créations.</p>
+            <p>Sélectionnez une catégorie pour explorer nos créations disponibles.</p>
         </div>
 
-        <!-- Style Shein/Temu : Grille de catégories moderne -->
-        <div class="category-grid-tabs" id="categoryTabs"></div>
+        <!-- Slider des Catégories -->
+        <div class="category-slider-container">
+            <div class="category-slider" id="categoryTabs"></div>
+        </div>
 
-        <!-- Products Grid -->
+        <!-- Grille des Produits de la catégorie sélectionnée -->
         <div class="products-grid" id="productsGrid"></div>
     </section>
 
-    <!-- About Section -->
+    <!-- About Section (Corrigé sur mobile) -->
     <section class="about-section" id="about">
         <div class="about-container">
             <div class="about-img-wrapper">
@@ -103,7 +105,7 @@
             <div class="footer-col">
                 <h4>Contactez-Nous</h4>
                 <p><i class="fa-solid fa-location-dot"></i> Rabat & Casablanca, Maroc</p>
-                <p><i class="fa-solid fa-phone"></i> <span class="footer-phone">+212 6 00 00 00 00</span></p>
+                <p><i class="fa-solid fa-phone"></i> <a href="tel:+212600000000" class="footer-phone">+212 6 00 00 00 00</a></p>
                 <p><i class="fa-solid fa-envelope"></i> contact@halawiyatelbeldi.ma</p>
             </div>
         </div>
@@ -131,7 +133,7 @@
         </div>
     </div>
 
-    <!-- Fenêtre Alerte Confirmation WhatsApp -->
+    <!-- Modale Alerte WhatsApp -->
     <div class="modal-overlay" id="confirmModal">
         <div class="modal-box">
             <div class="modal-icon"><i class="fa-brands fa-whatsapp"></i></div>
@@ -139,7 +141,7 @@
             <p>Vous allez être redirigé vers WhatsApp pour finaliser votre commande avec notre équipe.</p>
             <div class="modal-btns">
                 <button class="btn-cancel" onclick="closeConfirmModal()">Annuler</button>
-                <button class="btn-confirm-wa" onclick="proceedToWhatsApp()">Confirmer sur WhatsApp</button>
+                <button class="btn-confirm-wa" onclick="proceedToWhatsApp()">Confirmer</button>
             </div>
         </div>
     </div>
