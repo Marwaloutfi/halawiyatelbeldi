@@ -2,7 +2,7 @@
 // CONFIGURATION DE LA BOUTIQUE & API LOYVERSE
 // ==========================================
 const LOYVERSE_API_TOKEN = "METS_ICI_TA_CLE_API_LOYVERSE"; // Remplace par la clé API de ton client
-const WHATSAPP_NUMBER = "212600000000"; // Remplace par le numéro WhatsApp du client
+const WHATSAPP_NUMBER = "212721215175"; // Remplace par le numéro WhatsApp du client
 
 let categoriesData = [];
 let cart = [];
