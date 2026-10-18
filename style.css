@@ -66,8 +66,8 @@ h1, h2, h3, h4 {
 }
 
 .brand-logo-img {
-    width: 42px;
-    height: 42px;
+    width: 40px;
+    height: 40px;
     object-fit: cover;
     border-radius: 50%;
     border: 1.5px solid var(--gold);
@@ -76,7 +76,7 @@ h1, h2, h3, h4 {
 }
 
 .logo-text h1 {
-    font-size: 1.05rem;
+    font-size: 1rem;
     background: var(--gold-metallic);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -86,10 +86,11 @@ h1, h2, h3, h4 {
 }
 
 .logo-text span {
-    font-size: 0.6rem;
+    font-size: 0.58rem;
     color: var(--text-muted);
     letter-spacing: 1px;
     text-transform: uppercase;
+    display: block;
 }
 
 .cart-trigger {
@@ -97,8 +98,8 @@ h1, h2, h3, h4 {
     background: var(--bg-card);
     border: 1px solid var(--border-gold);
     color: var(--gold);
-    width: 42px;
-    height: 42px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -210,7 +211,7 @@ h1, h2, h3, h4 {
 
 .section-header {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1.8rem;
 }
 
 .subtitle {
@@ -233,48 +234,55 @@ h1, h2, h3, h4 {
     font-size: 0.9rem;
 }
 
-/* Style Catégories Type Shein / Temu (Cartes Horizontales Glissantes Modernes) */
-.category-grid-tabs {
+/* Style Slider Catégories type Shein / Temu */
+.category-slider-container {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 2.5rem;
+}
+
+.category-slider {
     display: flex;
-    gap: 0.7rem;
+    gap: 1rem;
     overflow-x: auto;
-    padding: 0.5rem 0.2rem 1.5rem 0.2rem;
-    margin-bottom: 2rem;
+    padding: 0.5rem 0.2rem 1rem 0.2rem;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
 }
 
-.category-grid-tabs::-webkit-scrollbar {
+.category-slider::-webkit-scrollbar {
     display: none;
 }
 
-.cat-card-tab {
+.cat-slider-card {
     background: var(--bg-card);
     border: 1px solid var(--border-gold);
-    padding: 0.8rem 1.2rem;
-    border-radius: 12px;
+    padding: 1rem 1.5rem;
+    border-radius: 14px;
     cursor: pointer;
     flex-shrink: 0;
     text-align: center;
     transition: var(--transition);
-    min-width: 140px;
+    min-width: 160px;
+    box-shadow: var(--shadow-luxury);
 }
 
-.cat-card-tab.active {
+.cat-slider-card.active {
     background: var(--gold-metallic);
     border-color: transparent;
-    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+    box-shadow: 0 4px 20px rgba(212, 175, 55, 0.4);
+    transform: translateY(-2px);
 }
 
-.cat-card-tab.active span {
+.cat-slider-card.active span {
     color: var(--bg-primary);
     font-weight: 700;
 }
 
-.cat-card-tab span {
-    font-size: 0.85rem;
+.cat-slider-card span {
+    font-size: 0.9rem;
     color: var(--text-main);
-    font-weight: 500;
+    font-weight: 600;
     display: block;
 }
 
@@ -307,7 +315,7 @@ h1, h2, h3, h4 {
 }
 
 .product-img {
-    height: 190px;
+    height: 200px;
     width: 100%;
     object-fit: cover;
 }
@@ -425,7 +433,7 @@ h1, h2, h3, h4 {
     border-color: transparent;
 }
 
-/* About Section (Corrigé : Image et Cadre parfaitement calés sans décalage) */
+/* About Section (Corrigé et bien calé sans décalage mobile) */
 .about-section {
     padding: 4rem 1rem;
     background: var(--bg-surface);
@@ -436,29 +444,27 @@ h1, h2, h3, h4 {
 .about-container {
     max-width: 1200px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .about-img-wrapper {
     position: relative;
-    height: 320px;
+    height: 300px;
     width: 100%;
-    margin-bottom: 1rem;
 }
 
 .about-img-bg {
     position: absolute;
-    inset: 0 15px 15px 0;
+    inset: 0 12px 12px 0;
     background: url('halawiyat.jpeg') center/cover no-repeat;
     border-radius: 12px;
 }
 
 .gold-frame {
     position: absolute;
-    inset: 15px 0 0 15px;
+    inset: 12px 0 0 12px;
     border: 2px solid var(--gold);
     border-radius: 12px;
     pointer-events: none;
@@ -504,7 +510,7 @@ h1, h2, h3, h4 {
     flex-shrink: 0;
 }
 
-/* Footer (Numéro de téléphone nettoyé du bleu moche) */
+/* Footer (Numéro de téléphone nettoyé du bleu) */
 .footer {
     padding: 4rem 1rem 2rem 1rem;
     background: var(--bg-primary);
@@ -530,7 +536,7 @@ h1, h2, h3, h4 {
 }
 
 .footer-phone {
-    color: var(--text-muted);
+    color: var(--text-muted) !important;
     text-decoration: none;
 }
 
@@ -800,7 +806,7 @@ h1, h2, h3, h4 {
     color: #ffffff;
 }
 
-/* Toast (Corrigé : Discret en bas sans bloquer l'écran) */
+/* Toast */
 .toast {
     position: fixed;
     bottom: 20px;
@@ -829,11 +835,12 @@ h1, h2, h3, h4 {
         gap: 2rem;
     }
     .about-container {
-        grid-template-columns: 1fr 1.2fr;
+        flex-direction: row;
+        align-items: center;
         gap: 4rem;
     }
     .about-img-wrapper {
-        height: 420px;
+        height: 400px;
     }
     .footer-container {
         grid-template-columns: 1.5fr 1fr 1.2fr;
